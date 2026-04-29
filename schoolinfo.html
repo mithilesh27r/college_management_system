@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132063111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-132063111-1');
+        </script>
+    <!--end analytics here--->
+        <title>1% coders- College Management System</title>
+          <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="eSkooly Inc.">
+      <!-- Favicon icon -->
+            <link rel="icon" href="assets/images/favicon.png" type="image/x-png">
+      <!------fa--------->
+        <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    	<link rel="stylesheet" href="./assets/fontawesome/css/sharp-solid.css" />
+    	<link rel="stylesheet" href="./assets/fontawesome/css/sharp-regular.css" />
+    	<link rel="stylesheet" href="./assets/fontawesome/css/sharp-light.css" />
+            
+            <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- themify-icons line icon -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+	  <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- ico font -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+	  <link rel="stylesheet" type="text/css" href="assets/calendar/javascript-calendar.css">
+	  <style>
+	      @media (max-width: 720px){
+        	#topmessage{
+        	    display:none;
+        	}
+        }
+	  </style>
+  </head>
+  <style>
+  
+  </style>
+  <body>
+  <body>
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <!--- header nav here--->
+			<nav class="navbar header-navbar pcoded-header">
+               <div class="navbar-wrapper" >
+                   <div class="navbar-logo">
+                       <a class="mobile-menu" id="mobile-collapse" href="#!">
+                           <i class="fa-duotone fa-solid fa-bars"></i>
+                       </a>
+                       <div class="mobile-search">
+                           <div class="header-search">
+                               <div class="main-search morphsearch-search">
+                                   <div class="input-group">
+                                       <span class="input-group-addon search-close"><i class="fa-duotone fa-solid fa-xmark"></i></span>
+                                       <input type="text" class="form-control" placeholder="Enter Keyword">
+                                       <span class="input-group-addon search-btn"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                              <a href="https://eskooly.com">
+                           <img class="img-fluid m-l-30" id="headerimg" style="max-height:45px;" src="assets/images/logo1.png" alt="eSkooly-Logo" />
+                       </a>
+                                              <a class="mobile-options">
+                           <i class="fa-duotone fa-solid fa-ellipsis"></i>
+                       </a>
+                       
+                   </div>
+
+                   <div class="navbar-container container-fluid">
+                       <ul class="nav-left">
+                           <li>
+                               <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="fa-duotone fa-solid fa-ellipsis"></i></a></div>
+                           </li>
+						   
+                           <li class="header-search">
+                               <div class="main-search morphsearch-search">
+                                   <div class="input-group">
+								       
+                                       <span class="input-group-addon search-close"><i class="fa-duotone fa-solid fa-xmark"></i></span>
+                                       <input type="text" class="form-control" id="tags" placeholder="Search Student"><form action="requestmanager.php" method="post">
+									   <input type="text" id="tags_code" style="display:none;" name="id">
+                                       <span  class="input-group-addon search-btn"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></span>
+									   <button type="submit" name="dashboard"  class="input-group-addon search-btn1"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></button>
+									   </form>
+									   
+                                   </div>
+                               </div>
+                           </li>
+						   
+                           <li>
+                               <a href="#!" onclick="javascript:toggleFullScreen()">
+                                   <i class="fa-duotone fa-solid fa-expand"></i>
+                               </a>
+                           </li>
+                       </ul>
+                       <ul class="nav-right">
+                                                       <li class="header-notification">
+                           
+                           <li class="user-profile header-notification" style="float:right;">
+                               <a href="#!">
+							    								<img src="logos/1742467615.jpg" style="width:40px; height:40px;" class="img-radius">
+								<span title="Mahendra Institute of Technology">Mahendra Institute</span>
+								<i class="ti-angle-down"></i>
+															   
+							   <!---
+                                   <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                   <span>John Doe</span>
+                                   <i class="ti-angle-down"></i>
+								   
+								----->
+                               </a>
+                               <ul class="show-notification profile-notification">
+                                   <li>
+                                       <a href="account.html">
+                                           <i class="ti-settings"></i> Account Settings
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="schoolinfo.html">
+                                           <i class="fa fa-bank"></i> Profile
+                                       </a>
+                                   </li>
+                                   
+                                   
+                                   <li>
+                                       <a href="logout.html">
+                                       <i class="ti-lock"></i> Logout
+                                   </a>
+                                   </li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+		  <script type="text/javascript">var theme = ["0","0","0","0","left","left","theme6","theme6","themelight1","themelight1","theme7","theme7","en","en"];</script>
+		  <!---language starting--->
+		  
+	<div id="google_translate_element" style="display: none !important;"></div>
+	<script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<!---language ends here--->
+	            <div class="pcoded-main-container">
+                    <div class="pcoded-wrapper">
+                        <!--- sidebar nav here ---->
+                        <nav class="pcoded-navbar" style="background:#f6f7fb;">
+                            <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                            <div class="pcoded-inner-navbar main-menu">
+                                
+                                <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">menu</div>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="active" id="dashboard">
+                                        <a href="dashboard.html">
+                                            <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="generalsettings">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-settings"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">General Settings</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="Collegeinfo">
+                                                <a href="schoolinfo.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Institute Profile</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="feeparticulars">
+                                                <a href="feeparticulars.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Fees Particulars</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="challan">
+                                                <a href="bankdetails.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Accounts For Fees Invoice</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="rules">
+                                                <a href="rules.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Rules & Regulations</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="grading">
+                                                <a href="grading.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Marks Grading</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                                        
+                                            <li class=" " id="account">
+                                                <a href="account.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Account Settings</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="logout.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Log out</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+    
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                   <li class="pcoded-hasmenu" id="classes">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-ruler-pencil"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Classes</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="allclasses">
+                                                <a href="classes.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">All Classes</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="newclass">
+                                                <a href="addnewclass.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">New Class</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="subjects">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-book"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Subjects</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="showsubjects">
+                                                <a href="showsubjects/showsubjects.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Classes With Subjects</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="assignsubjects">
+                                                <a href="subjects.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Assign Subjects</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+    
+                                </ul>
+    
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu" id="students">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Students</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="allstudents">
+                                                <a href="allstudents.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">All Students</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="addnewstudent">
+                                                <a href="admission.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Add New</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            
+                                            <li class=" " id="idcard">
+                                                <a href="studentcards.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student ID Cards</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="printinfo">
+                                                <a href="printinfo.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Print Basic List</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="employees">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-briefcase"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Employees</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="allemployees">
+                                                <a href="allemployees.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">All Employees</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="addnewteacher">
+                                                <a href="addnewteacher.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Add New</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    
+    
+                                </ul>
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu" id="accounts">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-wallet"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Accounts</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="heads">
+                                                <a href="chartofaccounts.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Chart Of Account</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="fees">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="fa fa-money"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Fees</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="getchallan">
+                                                <a href="getchallan.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Generate Fees Invoice</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="submitfee">
+                                                <a href="submitfees.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Collect Fees</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="feeslip">
+                                                <a href="stdregfs.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Fees Paid Slip</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="salary">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-credit-card"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Salary</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="submitsalary">
+                                                <a href="submitsalary.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Pay Salary</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                         </ul>
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu" id="attandance">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-hand-open"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Attendance</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="studentsattandance">
+                                                <a href="markatt.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students Attendance</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="employeesattandance">
+                                                <a href="chooseeattend.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Employees Attendance</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="classwise">
+                                                <a href="attreport.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Class wise Report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="studentattendancereport">
+                                                <a href="allatt.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students Attendance Report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="employeeattendancereport">
+                                                <a href="alleatt.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Employees Attendance Report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="exams">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-write"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Exams</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="createexam">
+                                                <a href="addexam.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Create New Exam</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="editexamdetail">
+                                                <a href="editexamdetail.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Edit or delete</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="addexammarks">
+                                                <a href="selectexam.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Add / update Exam Marks</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li class=" " id="resultcard">
+                                                <a href="searchexamresult.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Result Card</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                                          
+                                        </ul>
+                                    </li>
+    
+                                    <li class="pcoded-hasmenu" id="reports">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-files"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Reports</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="reportcard">
+                                                <a href="reportcardfor.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students report Card</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="report1">
+                                                <a href="report1.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students info report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="report2">
+                                                <a href="report2.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Parents info report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                                    
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="certificates">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-medall"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Certificates</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="lc">
+                                                <a href="leavecertificate.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Leave Certificate</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="cc">
+                                                <a href="charactercertificate.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Character Certificate</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                              
+                                        </ul>
+                                    </li> 
+                                </ul>                       
+                            </div>
+
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+								
+                                    
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                        <!-- Row start -->
+                                                                                <div class="row">
+										    
+										    <div class="col-12 p-10 f-16" style="border-radius:10px;background:#fff;"><strong style="border-right:1px solid #777;padding-right:10px;margin-right:10px;">General Settings</strong> 
+										    <i class="ti-home"></i> - Institute Profile
+										    </div>
+										    
+										
+										</div>
+                                        <div class="row">
+                                            <!-- Multiple Open Accordion start -->
+                                            <div class="col-lg-8">
+											    <h3 class="text-center m-t-20 w-100 p-b-10" style="line-height:20px;border-bottom:2px solid #fff;">Update Profile
+        										<br><div class="bg-gradient-blue" style="width:20px;height:7px;border-radius:10px;display:inline-block;"></div> <span class="f-12 m-dblue" style="display:inline-block;font-weight:100;">Required*</span>
+        										<div class="bg-gradient-gray m-l-10" style="width:20px;height:7px;border-radius:10px;display:inline-block;"></div> <span class="f-12 gradient-gray" style="display:inline-block;font-weight:100;">Optional</span>
+        										</h3>
+										        <form action="schoolinfo.html" method="post" id="myform" enctype="multipart/form-data">
+                                                <div class="row m-round">
+                                                    
+                                                    <div class="col-lg-6">
+                                                        
+                                                        
+														<div class="m-div">
+            									        <label class="m-label bg-gradient-blue m-white">Institute Logo*</label>
+            									        <img id="existingImage" src="logos/1742455387.png" class="img-circle m-10" style="width:120px; height:120px;">
+            											<input type="file" accept="image/*" class="form-control m-field hide_field" name="fileToUpload" id="fileToUpload">
+            											<span class="btn btn-sm bg-gradient-blue m-white" style="display:inline-block;border-radius:20px;" onclick="chooseFile()"> <i class="ti-image"></i> Change Logo</span>
+            											</div>
+														
+														<div class="m-div">
+										                <label class="m-label bg-gradient-blue m-white">Name of Institute*</label>
+														<input type="text" class="form-control m-field" placeholder="Institute Name" id="schoolname" name="schoolname" value="Mahendra Institute of Technology" required>
+														</div>
+														
+														<div class="m-div">
+										                <label class="m-label bg-gradient-blue m-white">Target Line*</label>
+														<input type="text" class="form-control m-field" Placeholder="Target Line" name="target" value="educate. inspire." required>
+														</div>
+														
+														
+															
+														</div>
+														<div class="col-lg-6">
+														    <div class="m-div">
+										                <label class="m-label bg-gradient-blue m-white">Phone Number*</label>
+														<input type="tel" class="form-control m-field" placeholder="Phone No" name="tel" value="99941564346" required>
+														</div>
+														
+														<div class="m-div">
+										                <label class="m-label bg-gradient-gray m-white">Website</label>
+														<input type="text" class="form-control m-field" placeholder="Website URL" name="web" value="">
+														</div>
+														
+														<div class="m-div">
+										                <label class="m-label bg-gradient-blue m-white">Address*</label>
+														<input type="text" class="form-control m-field" placeholder="Address" name="address" value="seppakkam" required>
+														</div>
+														
+														<div class="m-div">
+										                <label class="m-label bg-gradient-blue m-white">Country*</label>
+														<select name="country" id="searchlist" class="form-control m-field">
+																<option value="" selected="selected"></option> 
+																<option value="United States">United States</option> 
+																<option value="United Kingdom">United Kingdom</option> 
+																<option value="Afghanistan">Afghanistan</option> 
+																<option value="Albania">Albania</option> 
+																<option value="Algeria">Algeria</option> 
+																<option value="American Samoa">American Samoa</option> 
+																<option value="Andorra">Andorra</option> 
+																<option value="Angola">Angola</option> 
+																<option value="Anguilla">Anguilla</option> 
+																<option value="Antarctica">Antarctica</option> 
+																<option value="Antigua and Barbuda">Antigua and Barbuda</option> 
+																<option value="Argentina">Argentina</option> 
+																<option value="Armenia">Armenia</option> 
+																<option value="Aruba">Aruba</option> 
+																<option value="Australia">Australia</option> 
+																<option value="Austria">Austria</option> 
+																<option value="Azerbaijan">Azerbaijan</option> 
+																<option value="Bahamas">Bahamas</option> 
+																<option value="Bahrain">Bahrain</option> 
+																<option value="Bangladesh">Bangladesh</option> 
+																<option value="Barbados">Barbados</option> 
+																<option value="Belarus">Belarus</option> 
+																<option value="Belgium">Belgium</option> 
+																<option value="Belize">Belize</option> 
+																<option value="Benin">Benin</option> 
+																<option value="Bermuda">Bermuda</option> 
+																<option value="Bhutan">Bhutan</option> 
+																<option value="Bolivia">Bolivia</option> 
+																<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option> 
+																<option value="Botswana">Botswana</option> 
+																<option value="Bouvet Island">Bouvet Island</option> 
+																<option value="Brazil">Brazil</option> 
+																<option value="British Indian Ocean Territory">British Indian Ocean Territory</option> 
+																<option value="Brunei Darussalam">Brunei Darussalam</option> 
+																<option value="Bulgaria">Bulgaria</option> 
+																<option value="Burkina Faso">Burkina Faso</option> 
+																<option value="Burundi">Burundi</option> 
+																<option value="Cambodia">Cambodia</option> 
+																<option value="Cameroon">Cameroon</option> 
+																<option value="Canada">Canada</option> 
+																<option value="Cape Verde">Cape Verde</option> 
+																<option value="Cayman Islands">Cayman Islands</option> 
+																<option value="Central African Republic">Central African Republic</option> 
+																<option value="Chad">Chad</option> 
+																<option value="Chile">Chile</option> 
+																<option value="China">China</option> 
+																<option value="Christmas Island">Christmas Island</option> 
+																<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option> 
+																<option value="Colombia">Colombia</option> 
+																<option value="Comoros">Comoros</option> 
+																<option value="Congo">Congo</option> 
+																<option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option> 
+																<option value="Cook Islands">Cook Islands</option> 
+																<option value="Costa Rica">Costa Rica</option> 
+																<option value="Cote D ivoire">Cote D ivoire</option> 
+																<option value="Croatia">Croatia</option> 
+																<option value="Cuba">Cuba</option> 
+																<option value="Cyprus">Cyprus</option> 
+																<option value="Czech Republic">Czech Republic</option> 
+																<option value="Denmark">Denmark</option> 
+																<option value="Djibouti">Djibouti</option> 
+																<option value="Dominica">Dominica</option> 
+																<option value="Dominican Republic">Dominican Republic</option> 
+																<option value="Ecuador">Ecuador</option> 
+																<option value="Egypt">Egypt</option> 
+																<option value="El Salvador">El Salvador</option> 
+																<option value="Equatorial Guinea">Equatorial Guinea</option> 
+																<option value="Eritrea">Eritrea</option> 
+																<option value="Estonia">Estonia</option> 
+																<option value="Ethiopia">Ethiopia</option> 
+																<option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option> 
+																<option value="Faroe Islands">Faroe Islands</option> 
+																<option value="Fiji">Fiji</option> 
+																<option value="Finland">Finland</option> 
+																<option value="France">France</option> 
+																<option value="French Guiana">French Guiana</option> 
+																<option value="French Polynesia">French Polynesia</option> 
+																<option value="French Southern Territories">French Southern Territories</option> 
+																<option value="Gabon">Gabon</option> 
+																<option value="Gambia">Gambia</option> 
+																<option value="Georgia">Georgia</option> 
+																<option value="Germany">Germany</option> 
+																<option value="Ghana">Ghana</option> 
+																<option value="Gibraltar">Gibraltar</option> 
+																<option value="Greece">Greece</option> 
+																<option value="Greenland">Greenland</option> 
+																<option value="Grenada">Grenada</option> 
+																<option value="Guadeloupe">Guadeloupe</option> 
+																<option value="Guam">Guam</option> 
+																<option value="Guatemala">Guatemala</option> 
+																<option value="Guinea">Guinea</option> 
+																<option value="Guinea-bissau">Guinea-bissau</option> 
+																<option value="Guyana">Guyana</option> 
+																<option value="Haiti">Haiti</option> 
+																<option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option> 
+																<option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option> 
+																<option value="Honduras">Honduras</option> 
+																<option value="Hong Kong">Hong Kong</option> 
+																<option value="Hungary">Hungary</option> 
+																<option value="Iceland">Iceland</option> 
+																<option value="India">India</option> 
+																<option value="Indonesia">Indonesia</option> 
+																<option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option> 
+																<option value="Iraq">Iraq</option> 
+																<option value="Ireland">Ireland</option> 
+																<option value="Israel">Israel</option> 
+																<option value="Italy">Italy</option> 
+																<option value="Jamaica">Jamaica</option> 
+																<option value="Japan">Japan</option> 
+																<option value="Jordan">Jordan</option> 
+																<option value="Kazakhstan">Kazakhstan</option> 
+																<option value="Kenya">Kenya</option> 
+																<option value="Kiribati">Kiribati</option> 
+																<option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option> 
+																<option value="Korea, Republic of">Korea, Republic of</option> 
+																<option value="Kuwait">Kuwait</option> 
+																<option value="Kyrgyzstan">Kyrgyzstan</option> 
+																<option value="Lao People's Democratic Republic">Lao Peoples Democratic Republic</option> 
+																<option value="Latvia">Latvia</option> 
+																<option value="Lebanon">Lebanon</option> 
+																<option value="Lesotho">Lesotho</option> 
+																<option value="Liberia">Liberia</option> 
+																<option value="Libya">Libya</option> 
+																<option value="Liechtenstein">Liechtenstein</option> 
+																<option value="Lithuania">Lithuania</option> 
+																<option value="Luxembourg">Luxembourg</option> 
+																<option value="Macao">Macao</option> 
+																<option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option> 
+																<option value="Madagascar">Madagascar</option> 
+																<option value="Malawi">Malawi</option> 
+																<option value="Malaysia">Malaysia</option> 
+																<option value="Maldives">Maldives</option> 
+																<option value="Mali">Mali</option> 
+																<option value="Malta">Malta</option> 
+																<option value="Marshall Islands">Marshall Islands</option> 
+																<option value="Martinique">Martinique</option> 
+																<option value="Mauritania">Mauritania</option> 
+																<option value="Mauritius">Mauritius</option> 
+																<option value="Mayotte">Mayotte</option> 
+																<option value="Mexico">Mexico</option> 
+																<option value="Micronesia, Federated States of">Micronesia, Federated States of</option> 
+																<option value="Moldova, Republic of">Moldova, Republic of</option> 
+																<option value="Monaco">Monaco</option> 
+																<option value="Mongolia">Mongolia</option> 
+																<option value="Montserrat">Montserrat</option> 
+																<option value="Morocco">Morocco</option> 
+																<option value="Mozambique">Mozambique</option> 
+																<option value="Myanmar">Myanmar</option> 
+																<option value="Namibia">Namibia</option> 
+																<option value="Nauru">Nauru</option> 
+																<option value="Nepal">Nepal</option> 
+																<option value="Netherlands">Netherlands</option> 
+																<option value="Netherlands Antilles">Netherlands Antilles</option> 
+																<option value="New Caledonia">New Caledonia</option> 
+																<option value="New Zealand">New Zealand</option> 
+																<option value="Nicaragua">Nicaragua</option> 
+																<option value="Niger">Niger</option> 
+																<option value="Nigeria">Nigeria</option> 
+																<option value="Niue">Niue</option> 
+																<option value="Norfolk Island">Norfolk Island</option> 
+																<option value="Northern Mariana Islands">Northern Mariana Islands</option> 
+																<option value="Norway">Norway</option> 
+																<option value="Oman">Oman</option> 
+																<option value="Pakistan">Pakistan</option> 
+																<option value="Palau">Palau</option> 
+																<option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option> 
+																<option value="Panama">Panama</option> 
+																<option value="Papua New Guinea">Papua New Guinea</option> 
+																<option value="Paraguay">Paraguay</option> 
+																<option value="Peru">Peru</option> 
+																<option value="Philippines">Philippines</option> 
+																<option value="Pitcairn">Pitcairn</option> 
+																<option value="Poland">Poland</option> 
+																<option value="Portugal">Portugal</option> 
+																<option value="Puerto Rico">Puerto Rico</option> 
+																<option value="Qatar">Qatar</option> 
+																<option value="Reunion">Reunion</option> 
+																<option value="Romania">Romania</option> 
+																<option value="Russian Federation">Russian Federation</option> 
+																<option value="Rwanda">Rwanda</option> 
+																<option value="Saint Helena">Saint Helena</option> 
+																<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option> 
+																<option value="Saint Lucia">Saint Lucia</option> 
+																<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option> 
+																<option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option> 
+																<option value="Samoa">Samoa</option> 
+																<option value="San Marino">San Marino</option> 
+																<option value="Sao Tome and Principe">Sao Tome and Principe</option> 
+																<option value="Saudi Arabia">Saudi Arabia</option> 
+																<option value="Senegal">Senegal</option> 
+																<option value="Serbia and Montenegro">Serbia and Montenegro</option> 
+																<option value="Seychelles">Seychelles</option> 
+																<option value="Sierra Leone">Sierra Leone</option> 
+																<option value="Singapore">Singapore</option> 
+																<option value="Slovakia">Slovakia</option> 
+																<option value="Slovenia">Slovenia</option> 
+																<option value="Solomon Islands">Solomon Islands</option> 
+																<option value="Somalia">Somalia</option> 
+																<option value="South Africa">South Africa</option> 
+																<option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option> 
+																<option value="Spain">Spain</option> 
+																<option value="Sri Lanka">Sri Lanka</option> 
+																<option value="Sudan">Sudan</option> 
+																<option value="Suriname">Suriname</option> 
+																<option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option> 
+																<option value="Swaziland">Swaziland</option> 
+																<option value="Sweden">Sweden</option> 
+																<option value="Switzerland">Switzerland</option> 
+																<option value="Syrian Arab Republic">Syrian Arab Republic</option> 
+																<option value="State of Libya">State of Libya</option> 
+																<option value="Taiwan, Province of China">Taiwan, Province of China</option> 
+																<option value="Tajikistan">Tajikistan</option> 
+																<option value="Tanzania, United Republic of">Tanzania, United Republic of</option> 
+																<option value="Thailand">Thailand</option> 
+																<option value="Timor-leste">Timor-leste</option> 
+																<option value="Togo">Togo</option> 
+																<option value="Tokelau">Tokelau</option> 
+																<option value="Tonga">Tonga</option> 
+																<option value="Trinidad and Tobago">Trinidad and Tobago</option> 
+																<option value="Tunisia">Tunisia</option> 
+																<option value="Turkey">Turkey</option> 
+																<option value="Turkmenistan">Turkmenistan</option> 
+																<option value="Turks and Caicos Islands">Turks and Caicos Islands</option> 
+																<option value="Tuvalu">Tuvalu</option> 
+																<option value="Uganda">Uganda</option> 
+																<option value="Ukraine">Ukraine</option> 
+																<option value="United Arab Emirates">United Arab Emirates</option> 
+																<option value="United Kingdom">United Kingdom</option> 
+																<option value="United States">United States</option> 
+																<option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option> 
+																<option value="Uruguay">Uruguay</option> 
+																<option value="Uzbekistan">Uzbekistan</option> 
+																<option value="Vanuatu">Vanuatu</option> 
+																<option value="Venezuela">Venezuela</option> 
+																<option value="Viet Nam">Viet Nam</option> 
+																<option value="Virgin Islands, British">Virgin Islands, British</option> 
+																<option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option> 
+																<option value="Wallis and Futuna">Wallis and Futuna</option> 
+																<option value="Western Sahara">Western Sahara</option> 
+																<option value="Yemen">Yemen</option> 
+																<option value="Zambia">Zambia</option> 
+																<option value="Zimbabwe">Zimbabwe</option>
+															</select>
+															</div>
+														    
+														</div>
+														
+													</div>
+													<h6 class="text-center m-t-20">
+												    <button class="btn bg-c-yellow m-t-20" style="border-radius:25px;"  id="submitBtn" type="submit"><i class="ti-reload"></i></i> Update Profile</button>
+												    </h6>
+													</form> 
+												    
+                                                </div>
+                                                <!-- Multiple Open Accordion ends -->
+                                                <!-- Single Open Accordion start -->
+                                                <div class="col-lg-4">
+                                                    <div class="m-round p-20 m-t-20" style="background:#fff;line-height:16px;box-shadow:0px 0px 1px 0px gray;">
+                                                        
+                                                        <div>
+                                                                                            							<button class="btn btn-sm bg-gradient-success m-white m-round p-l-10 p-r-10" style="padding-top:5px;padding-bottom:5px;">Profile View</button>
+                                							<div class="text-center">
+                                							<img src="logos/1742455387.png" style="width:120px; height:auto;">
+                                							<h4 class="text-dark m-t-10 m-b-0" style="line-height:20px;">Mahendra Institute of Technology</h4>
+                                							<h6 class="text-gray" style="font-weight:100;">educate. inspire.</h6><hr class="bg-m-blue1" />
+                                							</div>
+                                							<div class="p-l-40">
+                                							    <div style="position:relative;">
+            												    <img src="assets/arrow-down.png" style="position:absolute;left:0px;top:16px;height:15px;">
+            												    <span class="f-10 m-gray" style="border-bottom:1.5px solid #999;"><i class="ti-mobile"></i> Phone No</span><br>
+            												    <strong class="f-12 m-l-20 text-blue">99941564346</strong>
+            												    </div>
+            												    <div style="position:relative;">
+            												    <img src="assets/arrow-down.png" style="position:absolute;left:0px;top:16px;height:15px;">
+            												    <span class="f-10 m-gray" style="border-bottom:1.5px solid #999;"><i class="ti-email"></i> Email</span><br>
+            												    <strong class="f-12 m-l-20 text-blue">akashasha.as@gmail.com</strong>
+            												    </div>
+            												    <div style="position:relative;">
+            												    <img src="assets/arrow-down.png" style="position:absolute;left:0px;top:16px;height:15px;">
+            												    <span class="f-10 m-gray" style="border-bottom:1.5px solid #999;"><i class="ti-world"></i> Website</span><br>
+            												    <strong class="f-12 m-l-20 text-blue"></strong>
+            												    </div>
+                                    							<div style="position:relative;">
+            												    <img src="assets/arrow-down.png" style="position:absolute;left:0px;top:16px;height:15px;">
+            												    <span class="f-10 m-gray" style="border-bottom:1.5px solid #999;"><i class="ti-pin"></i> Address</span><br>
+            												    <strong class="f-12 m-l-20 text-blue">seppakkam</strong>
+            												    </div>
+                                								<div style="position:relative;">
+            												    <img src="assets/arrow-down.png" style="position:absolute;left:0px;top:16px;height:15px;">
+            												    <span class="f-10 m-gray" style="border-bottom:1.5px solid #999;"><i class="ti-flag"></i> Country</span><br>
+            												    <strong class="f-12 m-l-20 text-blue"></strong>
+            												    </div>	
+                                							</div>
+                                							
+                                							                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Single Open Accordion ends -->
+            </div>
+            <!-- Row end -->
+            <!-- Row start -->
+            
+                    <!-- Row end -->
+                </div>
+                <!-- Page-body end -->
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Main-body end -->
+
+<!-- Required Jquery -->
+<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="assets/js/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="assets/js/modernizr/css-scrollbars.js"></script>
+
+<!-- Accordion js -->
+<script type="text/javascript" src="assets/pages/accordion/accordion.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/vartical-demo.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../bb/assets/js/selectlistsearch.js"></script>
+<script>
+
+// navigator activator
+document.getElementById("dashboard").classList.remove('active');
+document.getElementById("schoolinfo").classList.add('active');
+document.getElementById("generalsettings").classList.add('active');
+document.getElementById("generalsettings").classList.add('pcoded-trigger');
+//----------end----------------- 
+
+// search students api
+var availableTags = ["611622501032 -                   Ranjith - Information Technology","611622501001 - Akash - Information Technology","234576542 - Arya - Information Technology","61162250123 - Mubarak - Information Technology","611623501001 - Arshath - Information Technology","611622501016 - Harish - Information Technology","6116235010032 - Sridhar - Information Technology","611622501002 - Adhithya - Information Technology","611622501017 - keerthi - Artificial Intelligence","611622501099 - Dhanapal C - Mechanical ENGINEERING","2345676543 - vishwa - COMPUTER SCIENCE AND ENGINEERING","611622501009 - Reddy Katakam - Artificial Intelligence","75334565 - nowshath - COMPUTER SCIENCE AND ENGINEERING","611622501098 - Praveen - Mechanical ENGINEERING","611622501078 - Mugila G - Artificial Intelligence","4567654567 - saleem - COMPUTER SCIENCE AND ENGINEERING","61162250129 - Sanjay V - Artificial Intelligence","611622501097 - Chandru - COMPUTER SCIENCE AND ENGINEERING","76544589 - Harsha - COMPUTER SCIENCE AND ENGINEERING","611622501022 - Sridhar A - Artificial Intelligence","611623501033 - Fayazudeen A - Artificial Intelligence","611622501009 - Reddy Katakam - Artificial Intelligence","23456778 - Gowri - COMPUTER SCIENCE AND ENGINEERING","611622501034 - Karthikeyan D - Artificial Intelligence","611622501096 - Murugan - Mechanical ENGINEERING","345345567 - Mona - COMPUTER SCIENCE AND ENGINEERING","3456754345 - jaishree - COMPUTER SCIENCE AND ENGINEERING","611623501040 - Kavisri K - Artificial Intelligence","6116235010095 - Riya  - Mechanical ENGINEERING","611622501033 - kannan M - Electronics and Communication Engineering","23465446 - Gopika - Electronics and Communication Engineering","611622501045 - Ranjini - Electronics and Communication Engineering","235447566 - Yamuna - Electronics and Communication Engineering","611622501094 - Giri - Mechanical ENGINEERING","23456777 - ravichandran - Electronics and Communication Engineering","61162250136 - Abdul khan M - Electronics and Communication Engineering","6116235010093 - Prabhu - Mechanical ENGINEERING","61162250145 - selvaragavan K - Electronics and Communication Engineering","54234576 - Suvitha - Electronics and Communication Engineering","61162250192 - Dharanish - Mechanical ENGINEERING"];
+var availableTagsCode = ["611622501032","611622501001","234576542","61162250123","611623501001","611622501016","6116235010032","611622501002","611622501017","611622501099","2345676543","611622501009","75334565","611622501098","611622501078","4567654567","61162250129","611622501097","76544589","611622501022","611623501033","611622501009","23456778","611622501034","611622501096","345345567","3456754345","611623501040","6116235010095","611622501033","23465446","611622501045","235447566","611622501094","23456777","61162250136","6116235010093","61162250145","54234576","61162250192"]; 
+$( "#tags" ).autocomplete({ 
+	source: availableTags,
+	select: function (event, ui) {
+		var index = availableTags.indexOf(ui.item.value);
+		$("#tags_code").val(availableTagsCode[index]);  
+	}
+});
+//---------end------------------
+$(function()
+{
+    $("#myform").validate(
+      {
+        rules: 
+        {
+          country: 
+          {
+            required: true
+          }
+        }
+      });	
+});
+$('#schoolname').on('input', function(){
+    var company_name = $('#schoolname').val().replace(/[\/\\#,+$~%'":*?<>{}]/ig, "");
+    $('#schoolname').val(company_name);
+});
+$(document).ready(function() {
+      // Display preview of the selected image
+      $('#fileToUpload').on('change', function() {
+         handleFileSelect(this);
+      });
+   });
+// Function to handle file input change
+   function handleFileSelect(input) {
+      var input = document.getElementById('fileToUpload');
+      var existingImage = document.getElementById('existingImage');
+
+      if (input.files && input.files[0]) {
+         var reader = new FileReader();
+
+         reader.onload = function (e) {
+            existingImage.src = e.target.result;
+         };
+
+         reader.readAsDataURL(input.files[0]);
+      }
+   }
+
+   // Function to trigger the file input click
+   function chooseFile() {
+      document.getElementById('fileToUpload').click();
+   }
+
+//---------end------------------
+
+$(document).ready(function () {
+    $("#myform").submit(function () {
+        $("#submitBtn").attr("disabled", true);
+        $("#submitBtn").html("<i class='fa fa-circle-o-notch fa-spin'></i> Please Wait");
+        return true;
+    });
+});
+
+$(document).ready(function () {
+      $('#searchlist').selectize({
+          sortField: 'text'
+      });
+  });
+  $("#message").delay(3000).fadeOut('slow');
+$("#message1").delay(3500).fadeOut('slow');
+</script>
+</body>
+</html>

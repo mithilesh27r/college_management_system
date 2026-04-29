@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132063111-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-132063111-1');
+        </script>
+    <!--end analytics here--->
+        <title>1% coders- College Management System</title>
+          <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="" />
+      <meta name="author" content="eSkooly Inc.">
+      <!-- Favicon icon -->
+            <link rel="icon" href="assets/images/favicon.png" type="image/x-png">
+      <!------fa--------->
+        <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    	<link rel="stylesheet" href="./assets/fontawesome/css/sharp-solid.css" />
+    	<link rel="stylesheet" href="./assets/fontawesome/css/sharp-regular.css" />
+    	<link rel="stylesheet" href="./assets/fontawesome/css/sharp-light.css" />
+            
+            <!-- Google font-->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- themify-icons line icon -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+	  <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- ico font -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+	  <link rel="stylesheet" type="text/css" href="assets/calendar/javascript-calendar.css">
+	  <style>
+	      @media (max-width: 720px){
+        	#topmessage{
+        	    display:none;
+        	}
+        }
+	  </style>
+  </head>
+  <style>
+  
+  </style>
+  <body>
+  <body>
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <!--- header nav here--->
+			<nav class="navbar header-navbar pcoded-header">
+               <div class="navbar-wrapper" >
+                   <div class="navbar-logo">
+                       <a class="mobile-menu" id="mobile-collapse" href="#!">
+                           <i class="fa-duotone fa-solid fa-bars"></i>
+                       </a>
+                       <div class="mobile-search">
+                           <div class="header-search">
+                               <div class="main-search morphsearch-search">
+                                   <div class="input-group">
+                                       <span class="input-group-addon search-close"><i class="fa-duotone fa-solid fa-xmark"></i></span>
+                                       <input type="text" class="form-control" placeholder="Enter Keyword">
+                                       <span class="input-group-addon search-btn"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                                              <a href="https://eskooly.com">
+                           <img class="img-fluid m-l-30" id="headerimg" style="max-height:45px;" src="assets/images/logo1.png" alt="eSkooly-Logo" />
+                       </a>
+                                              <a class="mobile-options">
+                           <i class="fa-duotone fa-solid fa-ellipsis"></i>
+                       </a>
+                       
+                   </div>
+
+                   <div class="navbar-container container-fluid">
+                       <ul class="nav-left">
+                           <li>
+                               <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="fa-duotone fa-solid fa-ellipsis"></i></a></div>
+                           </li>
+						   
+                           <li class="header-search">
+                               <div class="main-search morphsearch-search">
+                                   <div class="input-group">
+								       
+                                       <span class="input-group-addon search-close"><i class="fa-duotone fa-solid fa-xmark"></i></span>
+                                       <input type="text" class="form-control" id="tags" placeholder="Search Student"><form action="requestmanager.php" method="post">
+									   <input type="text" id="tags_code" style="display:none;" name="id">
+                                       <span  class="input-group-addon search-btn"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></span>
+									   <button type="submit" name="dashboard"  class="input-group-addon search-btn1"><i class="fa-duotone fa-solid fa-magnifying-glass"></i></button>
+									   </form>
+									   
+                                   </div>
+                               </div>
+                           </li>
+						   
+                           <li>
+                               <a href="#!" onclick="javascript:toggleFullScreen()">
+                                   <i class="fa-duotone fa-solid fa-expand"></i>
+                               </a>
+                           </li>
+                       </ul>
+                       <ul class="nav-right">
+                                                       <li class="header-notification">
+                           
+                           <li class="user-profile header-notification" style="float:right;">
+                               <a href="#!">
+							    								<img src="logos/1742467615.jpg" style="width:40px; height:40px;" class="img-radius">
+								<span title="Mahendra Institute of Technology">Mahendra Institute</span>
+								<i class="ti-angle-down"></i>
+															   
+							   <!---
+                                   <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                   <span>John Doe</span>
+                                   <i class="ti-angle-down"></i>
+								   
+								----->
+                               </a>
+                               <ul class="show-notification profile-notification">
+                                   <li>
+                                       <a href="account.html">
+                                           <i class="ti-settings"></i> Account Settings
+                                       </a>
+                                   </li>
+                                   <li>
+                                       <a href="schoolinfo.html">
+                                           <i class="fa fa-bank"></i> Profile
+                                       </a>
+                                   </li>
+                                   
+                                   
+                                   <li>
+                                       <a href="logout.html">
+                                       <i class="ti-lock"></i> Logout
+                                   </a>
+                                   </li>
+                               </ul>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </nav>
+		  <script type="text/javascript">var theme = ["0","0","0","0","left","left","theme6","theme6","themelight1","themelight1","theme7","theme7","en","en"];</script>
+		  <!---language starting--->
+		  
+	<div id="google_translate_element" style="display: none !important;"></div>
+	<script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<!---language ends here--->
+	            <div class="pcoded-main-container">
+                    <div class="pcoded-wrapper">
+                        <!--- sidebar nav here ---->
+                        <nav class="pcoded-navbar" style="background:#f6f7fb;">
+                            <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                            <div class="pcoded-inner-navbar main-menu">
+                                
+                                <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">menu</div>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="active" id="dashboard">
+                                        <a href="dashboard.html">
+                                            <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="generalsettings">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-settings"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">General Settings</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="Collegeinfo">
+                                                <a href="schoolinfo.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Institute Profile</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="feeparticulars">
+                                                <a href="feeparticulars.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Fees Particulars</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="challan">
+                                                <a href="bankdetails.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Accounts For Fees Invoice</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="rules">
+                                                <a href="rules.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Rules & Regulations</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="grading">
+                                                <a href="grading.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Marks Grading</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                                        
+                                            <li class=" " id="account">
+                                                <a href="account.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Account Settings</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" ">
+                                                <a href="logout.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Log out</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+    
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                   <li class="pcoded-hasmenu" id="classes">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-ruler-pencil"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Classes</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="allclasses">
+                                                <a href="classes.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">All Classes</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="newclass">
+                                                <a href="addnewclass.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">New Class</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="subjects">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-book"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Subjects</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="showsubjects">
+                                                <a href="showsubjects/showsubjects.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Classes With Subjects</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="assignsubjects">
+                                                <a href="subjects.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Assign Subjects</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+    
+                                </ul>
+    
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu" id="students">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-user"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Students</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="allstudents">
+                                                <a href="allstudents.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">All Students</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="addnewstudent">
+                                                <a href="admission.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Add New</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        
+                                            
+                                            <li class=" " id="idcard">
+                                                <a href="studentcards.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Student ID Cards</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="printinfo">
+                                                <a href="printinfo.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Print Basic List</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="employees">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-briefcase"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Employees</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="allemployees">
+                                                <a href="allemployees.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">All Employees</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="addnewteacher">
+                                                <a href="addnewteacher.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Add New</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                    
+    
+                                </ul>
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu" id="accounts">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-wallet"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Accounts</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="heads">
+                                                <a href="chartofaccounts.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Chart Of Account</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="fees">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="fa fa-money"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Fees</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="getchallan">
+                                                <a href="getchallan.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Generate Fees Invoice</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="submitfee">
+                                                <a href="submitfees.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Collect Fees</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="feeslip">
+                                                <a href="stdregfs.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Fees Paid Slip</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="salary">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-credit-card"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Salary</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="submitsalary">
+                                                <a href="submitsalary.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Pay Salary</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                         </ul>
+                                
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu" id="attandance">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-hand-open"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Attendance</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="studentsattandance">
+                                                <a href="markatt.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students Attendance</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="employeesattandance">
+                                                <a href="chooseeattend.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Employees Attendance</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="classwise">
+                                                <a href="attreport.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Class wise Report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="studentattendancereport">
+                                                <a href="allatt.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students Attendance Report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="employeeattendancereport">
+                                                <a href="alleatt.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Employees Attendance Report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="exams">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-write"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Exams</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="createexam">
+                                                <a href="addexam.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Create New Exam</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="editexamdetail">
+                                                <a href="editexamdetail.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Edit or delete</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="addexammarks">
+                                                <a href="selectexam.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Add / update Exam Marks</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li class=" " id="resultcard">
+                                                <a href="searchexamresult.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Result Card</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                                          
+                                        </ul>
+                                    </li>
+    
+                                    <li class="pcoded-hasmenu" id="reports">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-files"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Reports</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="reportcard">
+                                                <a href="reportcardfor.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students report Card</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="report1">
+                                                <a href="report1.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Students info report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="report2">
+                                                <a href="report2.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Parents info report</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                                    
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu" id="certificates">
+                                        <a href="javascript:void(0)">
+                                            <span class="pcoded-micon"><i class="ti-medall"></i></span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Certificates</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class=" " id="lc">
+                                                <a href="leavecertificate.html">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Leave Certificate</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>
+                                            <li class=" " id="cc">
+                                                <a href="charactercertificate.php">
+                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Character Certificate</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                            </li>                              
+                                        </ul>
+                                    </li> 
+                                </ul>                       
+                            </div>
+                        </nav>
+
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+
+                                    <div class="page-body">
+                                                                              <div class="row">
+
+                                            <!-- order-card start -->
+                                            <div class="col-md-6 col-xl-3">
+											    <a href="allstudents.html">
+                                                <div class="card bg-m-dblue order-card m-round">
+                                                    <div class="card-block ">
+                                                        <h6 class="m-b-20">Total Students</h6>
+                                                        <h2 class="text-right"><i class="ti-user f-left"></i><span>40</span></h2>
+                                                        <p class="m-b-0">This Month<span class="f-right">11</span></p>
+                                                    </div>
+                                                </div>
+												</a>
+                                            </div>
+                                            <div class="col-md-6 col-xl-3">
+											    <a href="allemployees.html">
+                                                <div class="card bg-m-gray m-round order-card">
+                                                    <div class="card-block">
+                                                        <h6 class="m-b-20">Total Employees</h6>
+                                                        <h2 class="text-right"><i class="ti-briefcase f-left"></i><span>5</span></h2>
+                                                        <p class="m-b-0">This Month<span class="f-right">1</span></p>
+                                                    </div>
+                                                </div>
+												</a>
+                                            </div>
+                                            <div class="col-md-6 col-xl-3">
+											    <a href="balance.php">
+                                                <div class="card bg-m-orange m-round order-card">
+                                                    <div class="card-block">
+                                                        <h6 class="m-b-20">Revenue</h6>
+                                                        <h2 class="text-right"><span class="f-left" style="font-weight:300;vertical-align:top;">$</span><span>0</span></h2>
+                                                        <p class="m-b-0">This Month<span class="f-right"><b>$</b> 0</span></p>
+                                                    </div>
+                                                </div>
+												</a>
+                                            </div>
+                                            <div class="col-md-6 col-xl-3">
+											    <a href="balance.php">
+                                                <div class="card bg-m-blue1 m-round order-card">
+                                                    <div class="card-block">
+                                                        <h6 class="m-b-20">Total Profit</h6>
+                                                        <h2 class="text-right"><span class="f-left" style="font-weight:300;vertical-align:top;">$</span><span>0</span></h2>
+                                                        <p class="m-b-0">This Month<span class="f-right"><b>$</b> 0</span></p>
+                                                    </div>
+                                                </div>
+												</a>
+                                            </div>
+                                            <!-- order-card end -->
+
+                                            <!-- statustic and process start -->
+                                            <div class="col-lg-8 col-md-12">
+                                                <div class="card m-round">
+                                                    <div class="card-header">
+                                                        <h5 class="m-gray">Statistics</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa-chevron-left"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-times close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+													                                                            <canvas id="horizontalBar"></canvas>
+                                                    </div>
+                                                <div class="card m-round">
+                                                    <div class="card-header">
+                                                        <h5 class="m-gray">Statistics</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa-chevron-left"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-times close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+													     <canvas id="lineChart"></canvas>
+                                                    </div>
+                                                </div>
+												
+                                                </div>
+												<div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="m-orange">Today Absent Students</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa-chevron-left"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-times close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        													<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742466670.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Harish</b><br><span style="font-size:11px;color:#333;">Information Technology</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742465544.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Sridhar</b><br><span style="font-size:11px;color:#333;">Information Technology</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742465970.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Mugila G</b><br><span style="font-size:11px;color:#333;">Artificial Intelligence</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742466290.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Sridhar A</b><br><span style="font-size:11px;color:#333;">Artificial Intelligence</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742465498.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Mukesh</b><br><span style="font-size:11px;color:#333;">Mechanical ENGINEERING</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742466470.jpeg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Giri</b><br><span style="font-size:11px;color:#333;">Mechanical ENGINEERING</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742466559.jpeg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">saleem</b><br><span style="font-size:11px;color:#333;">COMPUTER SCIENCE AND ENGINEERING</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742466920.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">jaishree</b><br><span style="font-size:11px;color:#333;">COMPUTER SCIENCE AND ENGINEERING</span>
+													
+													</div>
+																										<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;height:90px;width:80px;">
+													<img src="uploads/students/1742467247.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #ff808b">
+													<br><b style="font-size:11px;color:#333;">Ranjini</b><br><span style="font-size:11px;color:#333;">Electronics and Communication Engineering</span>
+													
+													</div>
+                                                   </div>
+                                                </div>
+												<div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="m-blue1">Today Present Employees</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa-chevron-left"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-times close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        													<div class="btn-boxx small" style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+													<img src="uploads/employees/no-imagef.png" class="img-circle animated bounceIn" style="width:55px;height:55px; border:3px solid #5e81f4;">
+													<br><b style="font-size:11px;color:#333;">kalaiyarasi C</b><br><span style="font-size:11px;color:#333;">Teacher</span>
+														
+													</div>
+																										<div class="btn-boxx small" style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+													<img src="uploads/employees/no-imagef.png" class="img-circle animated bounceIn" style="width:55px;height:55px; border:3px solid #5e81f4;">
+													<br><b style="font-size:11px;color:#333;">meena</b><br><span style="font-size:11px;color:#333;">Teacher</span>
+														
+													</div>
+																										<div class="btn-boxx small" style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+													<img src="uploads/employees/no-image.png" class="img-circle animated bounceIn" style="width:55px;height:55px; border:3px solid #5e81f4;">
+													<br><b style="font-size:11px;color:#333;">Stanley</b><br><span style="font-size:11px;color:#333;">Teacher</span>
+														
+													</div>
+																										<div class="btn-boxx small" style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+													<img src="uploads/employees/no-image.png" class="img-circle animated bounceIn" style="width:55px;height:55px; border:3px solid #5e81f4;">
+													<br><b style="font-size:11px;color:#333;">Prem Kumar</b><br><span style="font-size:11px;color:#333;">Teacher</span>
+														
+													</div>
+																										<div class="btn-boxx small" style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+													<img src="uploads/employees/no-imagef.png" class="img-circle animated bounceIn" style="width:55px;height:55px; border:3px solid #5e81f4;">
+													<br><b style="font-size:11px;color:#333;">Revathi S</b><br><span style="font-size:11px;color:#333;">Teacher</span>
+														
+													</div>
+													                                                    </div>
+                                                </div>
+												<div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="m-gray">New Admissions</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa-chevron-left"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-times close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        														<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742466646.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">611622501032</span>
+														<br><b style="font-size:12px;color:#444;">                  Ranjith</b>
+																												<br><span style="font-size:11px;color:#555;">Information Technology</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742467409.jpeg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">234576542</span>
+														<br><b style="font-size:12px;color:#444;">Arya</b>
+																												<br><span style="font-size:11px;color:#555;">Information Technology</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742467263.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">61162250123</span>
+														<br><b style="font-size:12px;color:#444;">Mubarak</b>
+																												<br><span style="font-size:11px;color:#555;">Information Technology</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742465544.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">6116235010032</span>
+														<br><b style="font-size:12px;color:#444;">Sridhar</b>
+																												<br><span style="font-size:11px;color:#555;">Information Technology</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742463816.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">611622501099</span>
+														<br><b style="font-size:12px;color:#444;">Dhanapal C</b>
+																												<br><span style="font-size:11px;color:#555;">Mechanical ENGINEERING</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742465465.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">2345676543</span>
+														<br><b style="font-size:12px;color:#444;">vishwa</b>
+																												<br><span style="font-size:11px;color:#555;">COMPUTER SCIENCE AND ENGINEERING</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742465707.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">61162250129</span>
+														<br><b style="font-size:12px;color:#444;">Sanjay V</b>
+																												<br><span style="font-size:11px;color:#555;">Artificial Intelligence</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742466447.jpeg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">611622501096</span>
+														<br><b style="font-size:12px;color:#444;">Murugan</b>
+																												<br><span style="font-size:11px;color:#555;">Mechanical ENGINEERING</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742467042.jpeg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">611622501033</span>
+														<br><b style="font-size:12px;color:#444;">kannan M</b>
+																												<br><span style="font-size:11px;color:#555;">Electronics and Communication Engineering</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742467247.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">611622501045</span>
+														<br><b style="font-size:12px;color:#444;">Ranjini</b>
+																												<br><span style="font-size:11px;color:#555;">Electronics and Communication Engineering</span>
+														
+														</div>
+																												<div style="float:left;text-align:center;padding:5px;margin:5px;line-height:10px;">
+														<img src="uploads/students/1742467230.jpg" class="img-circle" style="width:55px;height:55px;border:3px solid #9698d6;">
+														<br><span style="font-size:11px;color:#333;">6116235010093</span>
+														<br><b style="font-size:12px;color:#444;">Prabhu</b>
+																												<br><span style="font-size:11px;color:#555;">Mechanical ENGINEERING</span>
+														
+														</div>
+														                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-12">
+                                                <div class="card m-round">
+                                                    <div class="card-header">
+                                                        <h5>Estimated Fee This Month</h5>
+                                                                                                            </div>
+                                                    <div class="card-block">
+                                                        <p class="text-center m-orange m-b-0"><i class="ti-target m-r-5"></i>Estimation</p>
+                                                        <span class="d-block m-orange f-24 f-w-600 text-center" id="estimated"><i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i><font style="font-size:12px;color:#Cacccd;"> Calculating..</font></span>
+                                                        <canvas id="feedback-chartm" height="100"></canvas>
+                                                        <div class="row justify-content-center m-t-15">
+                                                            <div class="col-auto b-r-default m-t-5 m-b-5">
+                                                                <h4 id="collection"><i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i><font style="font-size:12px;color:#Cacccd;"> Calculating..</font></h4>
+                                                                <p class="text-success m-b-0"><i class="ti-wallet m-r-5"></i>Collections</p>
+                                                            </div>
+                                                            <div class="col-auto m-t-5 m-b-5">
+                                                                <h4 id="remainings"><i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i><font style="font-size:12px;color:#Cacccd;"> Calculating..</font></h4>
+                                                                <p class="text-danger m-b-0"><i class="ti-hand-point-down m-r-5"></i>Remainings</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												<div class="card m-round">
+                                                    
+                                                    <div class="card-block">
+													    <p style="line-height:5px;color:#777;">Today Present Students<b class="f-right m-blue1">68%</b></p>
+                                                        <div class="progress" style="height:5px;">
+														  
+														  <div class="progress-bar bg-m-blue1" role="progressbar" aria-valuenow="0"
+														  aria-valuemin="0" aria-valuemax="100" style="width:68%;">
+															
+														  </div>
+														</div>
+														<p style="margin-top:20px;line-height:5px;color:#777;">Today Present Employees<b class="f-right m-orange">100%</b></p>
+                                                        <div class="progress" style="height:5px;">
+														  
+														  <div class="progress-bar bg-m-orange" role="progressbar" aria-valuenow="0"
+														  aria-valuemin="0" aria-valuemax="100" style="width:100%;">
+															
+														  </div>
+														</div>
+														<p style="margin-top:20px;line-height:5px;color:#777;">This Month Fee Collection<b class="f-right m-blue1">0%</b></p>
+                                                        <div class="progress" style="height:5px;">
+														  
+														  <div class="progress-bar bg-m-blue1" role="progressbar" aria-valuenow="0"
+														  aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+															
+														  </div>
+														</div>
+                                                    </div>
+                                                </div>
+																								
+                                                <div class="card user-card m-round">
+                                                    
+                                                    
+                                                        <div class="icalendar">
+														<div class="icalendar__month">
+															<div class="icalendar__prev" onclick="moveDate('prev')">
+																<span>&#10094</span>
+															</div>
+															<div class="icalendar__current-date">
+																<h2 id="icalendarMonth"></h2>
+																<div>
+																	<div id="icalendarDateStr"></div>
+																</div>
+
+															</div>
+															<div class="icalendar__next" onclick="moveDate('next')">
+																<span>&#10095</span>
+															</div>
+														</div>
+														<div class="icalendar__week-days">
+															<div>Sun</div>
+															<div>Mon</div>
+															<div>Tue</div>
+															<div>Wed</div>
+															<div>Thu</div>
+															<div>Fri</div>
+															<div>Sat</div>
+														</div>
+														<div class="icalendar__days"></div>
+
+
+														
+														</div>
+                                                    
+                                                </div>
+                                                                                                
+                                            </div>
+                                            <!-- statustic and process end -->
+											<!-- tabs card start -->
+                                            
+                                            <!-- tabs card end -->
+
+                                            
+
+                                            <!-- users visite and profile start -->
+                                            <div class="col-md-4">
+											    
+												
+												
+                                            </div>
+                                            <div class="col-md-8">
+                                                
+                                            </div>
+                                            <!-- users visite and profile end -->
+
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<!-- Required Jquery -->
+<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+<!-- jquery slimscroll js -->
+<script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<!-- modernizr js -->
+<script type="text/javascript" src="assets/js/modernizr/modernizr.js"></script>
+<!-- am chart -->
+<script src="assets/pages/widget/amchart/amcharts.min.js"></script>
+<script src="assets/pages/widget/amchart/serial.min.js"></script>
+<!-- Chart js -->
+<script type="text/javascript" src="assets/js/chart.js/Chart.js"></script>
+<script type="text/javascript" src="assets/js/mdb.js"></script>
+<!-- Todo js -->
+<script type="text/javascript " src="assets/pages/todo/todo.js "></script>
+<!-- Custom js -->
+<script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+<script type="text/javascript " src="assets/js/SmoothScroll.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/vartical-demo.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/calendar/javascript-calendar.js"></script>
+
+<script>
+//line
+  var mo=["Mar 2025","Feb 2025","Jan 2025","Dec 2024","Nov 2024","Oct 2024"];
+  var ic=["","","","","",""];	
+  var ex=["","","","","",""];	  
+  var ctxL = document.getElementById("lineChart").getContext('2d');
+  var myLineChart = new Chart(ctxL, {
+    type: 'line',
+    data: {
+      labels: [mo[5], mo[4], mo[3], mo[2], mo[1], mo[0]],
+      datasets: [{
+          label: "Expenses",
+	      data: [ex[5], ex[4], ex[3], ex[2], ex[1], ex[0]],
+          backgroundColor: [
+            'rgba(255, 128, 139, .7)',
+          ],
+          borderColor: [
+            'rgba(255, 128, 139, 1)',
+          ],
+          borderWidth: 4
+        },
+        {
+          label: "Income",
+          data: [ic[5], ic[4], ic[3], ic[2], ic[1], ic[0]],
+          backgroundColor: [
+            'rgba(94, 129, 244, .7)',
+          ],
+          borderColor: [
+            'rgba(94, 129, 244, 1)',
+          ],
+          borderWidth: 4
+        }
+      ]
+    },
+    options: {
+      responsive: true
+    }
+  });
+//---------ajax for estimation---------------
+$(document).ready(function(){
+    var students="40";
+    var symbol="$";
+    if(students<50){
+   var myajax= $.ajax({
+           url: 'ajaxestimate.php',
+           success: function(data) {
+             var estimated=data[0];
+             var collection=data[1];
+             var estimate=data[2];
+             $("#estimated").html(symbol+' '+(estimated.toLocaleString()));
+             $("#collection").html(symbol+' '+(collection.toLocaleString()));
+             $("#remainings").html(symbol+' '+(estimate.toLocaleString()));
+             var ctx = document.getElementById("feedback-chartm").getContext("2d");
+                var config = {
+                    type: 'doughnut',
+                    data: {
+                        datasets: [{
+                            data: [
+                                collection, estimate,
+                            ],
+                            backgroundColor: [
+                                "#4747a1",
+                                "#f4f5fe"
+                            ],
+                            label: 'Dataset 1',
+                            borderWidth: 0
+                        }],
+                        labels: [
+                            "Collections",
+                            "Remainings"
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: {
+                            display: false,
+                        },
+                        title: {
+                            display: false,
+                            text: 'Chart.js Doughnut Chart'
+                        },
+                        animation: {
+                            animateScale: true,
+                            animateRotate: true
+                        }
+                    }
+                };
+                window.myDoughnut = new Chart(ctx, config);
+           },
+           dataType: 'json'
+        });
+    }else{
+        $("#estimated").html('<i class="fa fa-low-vision" style="font-size:20px;color:#Cacccd;"></i><font style="font-size:12px;color:#Cacccd;"> Hidden</font>');
+        $("#collection").html('<i class="fa fa-low-vision" style="font-size:20px;color:#Cacccd;"></i><font style="font-size:12px;color:#Cacccd;"> Hidden</font>');
+        $("#remainings").html('<i class="fa fa-low-vision" style="font-size:20px;color:#Cacccd;"></i><font style="font-size:12px;color:#Cacccd;"> Hidden</font>');
+        var ctx = document.getElementById("feedback-chartm").getContext("2d");
+                var config = {
+                    type: 'doughnut',
+                    data: {
+                        datasets: [{
+                            data: [
+                                '50', '50',
+                            ],
+                            backgroundColor: [
+                                "#Cacccd",
+                                "#E0e5e6"
+                            ],
+                            label: 'Dataset 1',
+                            borderWidth: 0
+                        }],
+                        labels: [
+                            "Collections",
+                            "Remainings"
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: {
+                            display: false,
+                        },
+                        title: {
+                            display: false,
+                            text: 'Chart.js Doughnut Chart'
+                        },
+                        animation: {
+                            animateScale: true,
+                            animateRotate: true
+                        }
+                    }
+                };
+                window.myDoughnut = new Chart(ctx, config);
+                $("#startcalculation").click(function(){
+                    $("#estimated").html('<i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i><font style="font-size:12px;color:#Cacccd;"> Calculating..</font>');
+                    $("#collection").html('<i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i><font style="font-size:12px;color:#Cacccd;"> Calculating..</font>');
+                    $("#remainings").html('<i class="fa fa-circle-o-notch fa-spin" style="font-size:24px"></i><font style="font-size:12px;color:#Cacccd;"> Calculating..</font>');
+                    $("#startcalculation").hide();
+                    var myajax= $.ajax({
+                       url: 'ajaxestimate.php',
+                       success: function(data) {
+                         var estimated=data[0];
+                         var collection=data[1];
+                         var estimate=data[2];
+                         $("#estimated").html(symbol+' '+(estimated.toLocaleString()));
+                         $("#collection").html(symbol+' '+(collection.toLocaleString()));
+                         $("#remainings").html(symbol+' '+(estimate.toLocaleString()));
+                         var ctx = document.getElementById("feedback-chartm").getContext("2d");
+                            var config = {
+                                type: 'doughnut',
+                                data: {
+                                    datasets: [{
+                                        data: [
+                                            collection, estimate,
+                                        ],
+                                        backgroundColor: [
+                                            "#4747a1",
+                                            "#f4f5fe"
+                                        ],
+                                        label: 'Dataset 1',
+                                        borderWidth: 0
+                                    }],
+                                    labels: [
+                                        "Collections",
+                                        "Remainings"
+                                    ]
+                                },
+                                options: {
+                                    responsive: true,
+                                    legend: {
+                                        display: false,
+                                    },
+                                    title: {
+                                        display: false,
+                                        text: 'Chart.js Doughnut Chart'
+                                    },
+                                    animation: {
+                                        animateScale: true,
+                                        animateRotate: true
+                                    }
+                                }
+                            };
+                            window.myDoughnut = new Chart(ctx, config);
+                       },
+                       dataType: 'json'
+                    });
+                });
+    }
+    
+});
+//---------estimation ends------------------
+ 
+	//horizontalBar
+	var acl=["Information Technology","Electronics and Communication Engineering","COMPUTER SCIENCE AND ENGINEERING","Mechanical ENGINEERING","Artificial Intelligence"];
+  var ast=["8","8","8","7","9"];
+new Chart(document.getElementById("horizontalBar"), {
+    "type": "horizontalBar",
+    "data": {
+      "labels": acl,
+      "datasets": [{
+        "label": "Students",
+        "data": ast,
+        "fill": false,
+        "backgroundColor": ["#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b"
+          ],
+        "borderColor": ["#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b","#5e81f4", "#ff808b"
+          ],
+        "borderWidth": 1
+      }]
+    },
+    "options": {
+      "scales": {
+        "xAxes": [{
+          "ticks": {
+            "beginAtZero": true
+          }
+        }]
+      }
+    }
+  });
+//-------------------------send message--------------------
+function sendMsg()
+    {
+	  
+	  $("#send").hide();
+	  $("#sending").show();
+	  
+	  $.ajax({
+        type:'post',
+        url:'checkmsg.php',
+        data:{
+          
+          send:'send'
+		  
+        },
+        success:function(response) {
+		  if(response!="NO"){
+		  $("#sending").hide();
+		  $("#sent").show();
+		  
+		  
+		  }
+          //step2();
+
+        }
+      });
+	  }	
+function sendbwish()
+    {
+	  $("#birthday").html('Sending...');
+	  $.ajax({
+        type:'post',
+        url:'checkmsg.php',
+        data:{
+          
+          sendbw:'sendbw'
+		  
+        },
+        success:function(response) {
+		  if(response!="NO"){
+            $("#birthday").html('Sent Successfully');
+		  }
+          //step2();
+
+        }
+      });
+	}	
+// search 
+            var availableTags = ["611622501032 -                   Ranjith - Information Technology","611622501001 - Akash - Information Technology","234576542 - Arya - Information Technology","61162250123 - Mubarak - Information Technology","611623501001 - Arshath - Information Technology","611622501016 - Harish - Information Technology","6116235010032 - Sridhar - Information Technology","611622501002 - Adhithya - Information Technology","611622501017 - keerthi - Artificial Intelligence","611622501099 - Dhanapal C - Mechanical ENGINEERING","2345676543 - vishwa - COMPUTER SCIENCE AND ENGINEERING","611622501009 - Reddy Katakam - Artificial Intelligence","75334565 - nowshath - COMPUTER SCIENCE AND ENGINEERING","611622501098 - Praveen - Mechanical ENGINEERING","611622501078 - Mugila G - Artificial Intelligence","4567654567 - saleem - COMPUTER SCIENCE AND ENGINEERING","61162250129 - Sanjay V - Artificial Intelligence","611622501097 - Chandru - COMPUTER SCIENCE AND ENGINEERING","76544589 - Harsha - COMPUTER SCIENCE AND ENGINEERING","611622501022 - Sridhar A - Artificial Intelligence","611623501033 - Fayazudeen A - Artificial Intelligence","611622501009 - Reddy Katakam - Artificial Intelligence","23456778 - Gowri - COMPUTER SCIENCE AND ENGINEERING","611622501034 - Karthikeyan D - Artificial Intelligence","611622501096 - Murugan - Mechanical ENGINEERING","345345567 - Mona - COMPUTER SCIENCE AND ENGINEERING","3456754345 - jaishree - COMPUTER SCIENCE AND ENGINEERING","611623501040 - Kavisri K - Artificial Intelligence","6116235010095 - Riya  - Mechanical ENGINEERING","611622501033 - kannan M - Electronics and Communication Engineering","23465446 - Gopika - Electronics and Communication Engineering","611622501045 - Ranjini - Electronics and Communication Engineering","235447566 - Yamuna - Electronics and Communication Engineering","611622501094 - Giri - Mechanical ENGINEERING","23456777 - ravichandran - Electronics and Communication Engineering","61162250136 - Abdul khan M - Electronics and Communication Engineering","6116235010093 - Prabhu - Mechanical ENGINEERING","61162250145 - selvaragavan K - Electronics and Communication Engineering","54234576 - Suvitha - Electronics and Communication Engineering","61162250192 - Dharanish - Mechanical ENGINEERING"];
+			var availableTagsCode = ["611622501032","611622501001","234576542","61162250123","611623501001","611622501016","6116235010032","611622501002","611622501017","611622501099","2345676543","611622501009","75334565","611622501098","611622501078","4567654567","61162250129","611622501097","76544589","611622501022","611623501033","611622501009","23456778","611622501034","611622501096","345345567","3456754345","611623501040","6116235010095","611622501033","23465446","611622501045","235447566","611622501094","23456777","61162250136","6116235010093","61162250145","54234576","61162250192"]; 
+			$( "#tags" ).autocomplete({ 
+				source: availableTags,
+				select: function (event, ui) {
+					var index = availableTags.indexOf(ui.item.value);
+					$("#tags_code").val(availableTagsCode[index]);  
+				}
+			});
+if(theme[4]=='right'){
+	
+		$(".m-container img").css({'position' : 'absolute','top' : '0','left' : '0','margin-top' : '-15px','margin-left' : '5%','height' : '100px'});
+		$(".ms-container img").css({'position' : 'absolute','top' : '0','left' : '0','margin-top' : '-15px','margin-left' : '5%','height' : '105px'});
+		$(".ms1-container img").css({'position' : 'absolute','top' : '0','left' : '0','margin-top' : '-15px','margin-left' : '5%','height' : '92px'});
+		
+	}
+$("#closetop").click(function(e){
+    e.preventDefault();
+    $("#topmessage").slideUp();
+    $.ajax({
+        type:'post',
+        url:'checkmsg.php',
+        data:{
+          
+          topmessage:'topmessage'
+		  
+        }
+      });
+});
+
+var d = new Date();
+		if(d.getHours() >= 0 && d.getHours() <= 19 ){
+			$(".hours").show();
+			$(".message").hide();
+		}
+		else {  
+			$(".hours").hide();
+			$(".message").show();
+		}
+		</script>
+		<script>
+		
+			(function() {
+		  var start = new Date;
+		  if(start.getDay()<=5){
+			var din=5 - start.getDay();
+			start.setDate(start.getDate() + din);
+			//alert(start.getDate());
+		  }else{
+			start.setDate(start.getDate() + 6);
+		  }
+		  //start.setHours(19, 10, 0); // 11am
+			start.setHours(23);
+			start.setMinutes(59);
+			start.setSeconds(59);
+		  function pad(num) {
+			return ("0" + parseInt(num)).substr(-2);
+		  }
+
+		  function tick() {
+			var now = new Date;
+			if (now > start) { // too late, go to tomorrow
+			  start.setDate(start.getDate() + 1);
+			}
+			var delta = ((start - now) / 1000);
+			// calculate (and subtract) whole days
+			var days = pad(delta / 86400);
+			delta -= days * 86400;
+
+			// calculate (and subtract) whole hours
+			var hours = pad((delta / 3600) % 24);
+			delta -= hours * 3600;
+
+			// calculate (and subtract) whole minutes
+			var minutes = pad((delta / 60) % 60);
+			delta -= minutes * 60;
+			// what's left is seconds
+			var seconds = pad(delta % 60);
+			document.getElementById('dd').innerHTML =days;
+			document.getElementById('hh').innerHTML =hours;
+			document.getElementById('mm').innerHTML =minutes;
+			document.getElementById('ss').innerHTML =seconds;
+			
+			setTimeout(tick, 1000);
+		  }
+
+		  document.addEventListener('DOMContentLoaded', tick);
+		})(); 
+</script>
+</body>
+
+</html>
